@@ -1,0 +1,26 @@
+.StockData{
+    display: flex;
+    flex-direction: column;
+    background: purple;
+    width:80%;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.StockData .top{
+    padding: 0 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+}
+
+.StockData .bottom{
+    padding: 0 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+}
