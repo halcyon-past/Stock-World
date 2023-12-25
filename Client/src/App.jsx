@@ -14,7 +14,7 @@ function App() {
   const getStockData = useCallback(async () => {
     try {
       setLoading(false);
-      const res = await axios.get('http://localhost:3000/stocks');
+      const res = await axios.get('https://vivacious-frog-clothes.cyclic.app/stocks');
       setStockData(res.data);
     } catch (error) {
       console.error('Error fetching data:', error);
@@ -23,7 +23,7 @@ function App() {
 
   const loadData = useCallback(async () => {
     try{
-      await axios.get('http://localhost:3000/refresh');
+      await axios.get('https://vivacious-frog-clothes.cyclic.app/refresh');
     }catch (error){
       console.error('Error fetching data:', error);
     }
