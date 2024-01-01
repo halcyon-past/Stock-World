@@ -21,7 +21,7 @@ function StockData(props) {
         <marquee style={{fontSize:'1rem',padding:0}}>Total Sell Quantity: {data.total_sell_qty}, Total Buy Quantity: {data.total_buy_qty}</marquee>
         <div className="bottom">
             <p className="status">Price: {data.price}</p>
-            <p className="status">Change: {data.change.toFixed(2)||data.change}</p>
+            <p className="status">Change: {data.change?data.change.toFixed(2):data.change}</p>
         </div>
     </div>
   )
